@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet & Expenses Apps</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .app-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+        }
+        
+        .app-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            text-align: center;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .app-card:nth-child(2) .app-icon {
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .app-title {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        
+        .app-subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .app-description {
+            color: #555;
+            margin-bottom: 25px;
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: center;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 25px 0;
+        }
+        
+        .features h3 {
+            color: #667eea;
+            font-size: 18px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        .feature-item::before {
+            content: "✓";
+            color: #34C759;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        
+        .app-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: #007AFF;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,122,255,0.3);
+        }
+        
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 1100px) {
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 32px;
+            }
+            
+            .app-card {
+                padding: 30px 20px;
+            }
+            
+            .app-title {
+                font-size: 26px;
+            }
+            
+            .app-icon {
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Wallet & Expenses Apps</h1>
+        <p>Two powerful iOS apps to manage your finances and vouchers</p>
+    </div>
+    
+    <div class="container">
+        <div class="apps-grid">
+            <!-- Digital Wallet App -->
+            <div class="app-card">
+                <div class="app-icon">🎁</div>
+                <h2 class="app-title">Digital Wallet</h2>
+                <div class="app-subtitle">ארנק דיגיטלי</div>
+                
+                <p class="app-description">
+                    Your digital wallet for vouchers, refunds, and loyalty cards. 
+                    Create beautiful Apple Wallet passes for all your gift cards and store credits.
+                </p>
+                
+                <div class="features">
+                    <h3>Features</h3>
+                    <div class="feature-item">Create digital vouchers and gift cards</div>
+                    <div class="feature-item">Manage store refund credits</div>
+                    <div class="feature-item">Track loyalty program cards</div>
+                    <div class="feature-item">Hebrew & English support</div>
+                    <div class="feature-item">Local storage - your data stays private</div>
+                </div>
+                
+                <div class="app-links">
+                    <a href="#" class="btn btn-primary">
+                        📱 Download on App Store (Coming Soon)
+                    </a>
+                    <a href="Wallet/support.html" class="btn btn-secondary">
+                        💬 Support & FAQ
+                    </a>
+                    <a href="Wallet/privacy-policy.html" class="btn btn-secondary">
+                        🔒 Privacy Policy
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Clarify Expenses App -->
+            <div class="app-card">
+                <div class="app-icon">💰</div>
+                <h2 class="app-title">Clarify Expenses</h2>
+                <div class="app-subtitle">בירור הוצאות</div>
+                
+                <p class="app-description">
+                    Track and categorize your expenses with ease. Import bank statements, 
+                    automatically categorize transactions, and gain insights into your spending habits.
+                </p>
+                
+                <div class="features">
+                    <h3>Features</h3>
+                    <div class="feature-item">Import bank statements (CSV)</div>
+                    <div class="feature-item">Automatic transaction categorization</div>
+                    <div class="feature-item">Expense tracking and reporting</div>
+                    <div class="feature-item">Multi-currency support</div>
+                    <div class="feature-item">Secure cloud sync across devices</div>
+                </div>
+                
+                <div class="app-links">
+                    <a href="#" class="btn btn-primary">
+                        📱 Download on App Store (Coming Soon)
+                    </a>
+                    <a href="ClarifyExpensesMobile/support.html" class="btn btn-secondary">
+                        💬 Support & FAQ
+                    </a>
+                    <a href="ClarifyExpensesMobile/privacy-policy.html" class="btn btn-secondary">
+                        🔒 Privacy Policy
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>
+                <strong>Wallet & Expenses Apps</strong> - Your financial tools, your privacy
+            </p>
+            <p style="margin-top: 15px;">
+                <a href="https://github.com/wallet-coupons-website">View on GitHub</a> | 
+                <a href="mailto:support@wallet-coupons.com">Contact Us</a>
+            </p>
+            <p style="margin-top: 15px;">
+                © 2025 Wallet & Expenses Apps. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+

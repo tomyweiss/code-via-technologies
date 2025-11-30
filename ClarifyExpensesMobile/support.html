@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Clarify Expenses</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        .intro {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .contact-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .contact-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .contact-card h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .faq-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #555;
+            padding-left: 10px;
+            border-left: 3px solid #3498db;
+        }
+        .faq-answer ul {
+            margin: 10px 0;
+        }
+        .faq-answer li {
+            margin: 5px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .feature-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .feature-box h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+        .response-time {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .response-time strong {
+            color: #155724;
+            font-size: 1.2em;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clarify Expenses Support</h1>
+    
+    <div class="intro">
+        <p>
+            <strong>Welcome to Clarify Expenses Support!</strong> We're here to help you get the most out of your expense tracking experience.
+            Whether you have questions, need troubleshooting help, or want to share feedback, we're ready to assist.
+        </p>
+    </div>
+
+    <div class="response-time">
+        <strong>⚡ We typically respond within 48 hours</strong>
+    </div>
+
+    <h2>📞 Contact Us</h2>
+    <div class="contact-options">
+        <div class="contact-card">
+            <h3>📧 Email Support</h3>
+            <p><a href="mailto:support@clarifyexpenses.com">support@clarifyexpenses.com</a></p>
+            <p>For general questions, account issues, or detailed support requests.</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>🐛 Bug Reports</h3>
+            <p><a href="https://github.com/clarify-mobile/support/issues" target="_blank">GitHub Issues</a></p>
+            <p>Report bugs, crashes, or unexpected behavior. Please include your iOS version and device model.</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>💡 Feature Requests</h3>
+            <p><a href="https://github.com/clarify-mobile/support/issues" target="_blank">GitHub Issues</a></p>
+            <p>Suggest new features or improvements. We love hearing from users!</p>
+        </div>
+    </div>
+
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: How do I import bank statements?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Importing bank statements is easy:</p>
+            <ol>
+                <li>Download your bank statement as a CSV file</li>
+                <li>Open Clarify Expenses and tap the <strong>Import</strong> button</li>
+                <li>Select your CSV file</li>
+                <li>The app will automatically parse and categorize your transactions</li>
+            </ol>
+            <p>Supported formats include most major banks in the US, UK, Canada, and Israel.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: Why aren't my transactions syncing?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> If sync isn't working, try these steps:</p>
+            <ul>
+                <li>Check your internet connection</li>
+                <li>Make sure you're signed in (Settings → Account)</li>
+                <li>Force quit and restart the app</li>
+                <li>Go to Settings → Sync and tap "Sync Now"</li>
+            </ul>
+            <p>If the problem persists, please contact us at <a href="mailto:support@clarifyexpenses.com">support@clarifyexpenses.com</a>.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: How do I change the app language?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Clarify Expenses automatically uses your device's language setting.</p>
+            <p>To change the language:</p>
+            <ol>
+                <li>Go to your device Settings app</li>
+                <li>Scroll down to Clarify Expenses</li>
+                <li>Tap "Language"</li>
+                <li>Select English or Hebrew</li>
+            </ol>
+            <p>The app will restart with your selected language.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: Can I edit or delete transactions?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Yes! To edit or delete a transaction:</p>
+            <ul>
+                <li><strong>Edit:</strong> Tap on any transaction to view details, then tap "Edit"</li>
+                <li><strong>Delete:</strong> Swipe left on a transaction and tap "Delete"</li>
+                <li><strong>Bulk delete:</strong> Long press on a transaction to enter selection mode</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: How do I categorize transactions?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Transactions are automatically categorized when you add them. To change a category:</p>
+            <ol>
+                <li>Tap on the transaction</li>
+                <li>Tap on the category field</li>
+                <li>Select a new category from the list</li>
+            </ol>
+            <p>The app learns from your changes and improves its automatic categorization over time.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: Is my financial data secure?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Absolutely! Security is our top priority:</p>
+            <ul>
+                <li>All data is stored locally on your device by default</li>
+                <li>Optional cloud sync uses end-to-end encryption</li>
+                <li>We use HTTPS/TLS for all network communications</li>
+                <li>We never sell or share your data with third parties</li>
+                <li>You can delete your data at any time</li>
+            </ul>
+            <p>Read our full <a href="privacy-policy.html">Privacy Policy</a> for more details.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: Can I export my transaction data?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Yes! You can export your data as a CSV file:</p>
+            <ol>
+                <li>Go to Settings → Data Management</li>
+                <li>Tap "Export Transactions"</li>
+                <li>Choose your date range</li>
+                <li>Select where to save the file</li>
+            </ol>
+            <p>This is useful for tax preparation, backup, or migrating to another app.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: How do I delete my account?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> To delete your account and all associated data:</p>
+            <ol>
+                <li>Go to Settings → Account</li>
+                <li>Scroll to the bottom</li>
+                <li>Tap "Delete Account"</li>
+                <li>Confirm your choice</li>
+            </ol>
+            <p><strong>Warning:</strong> This action cannot be undone. All your data will be permanently deleted within 30 days.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: What currencies are supported?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Clarify Expenses supports multiple currencies including:</p>
+            <ul>
+                <li>USD (US Dollar)</li>
+                <li>EUR (Euro)</li>
+                <li>GBP (British Pound)</li>
+                <li>ILS (Israeli Shekel)</li>
+                <li>CAD (Canadian Dollar)</li>
+                <li>And many more!</li>
+            </ul>
+            <p>The currency is automatically detected from your bank imports or can be set manually when adding transactions.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: Does the app work offline?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Yes! Clarify Expenses works completely offline. All core features are available without an internet connection:</p>
+            <ul>
+                <li>Add, edit, and delete transactions</li>
+                <li>View summaries and reports</li>
+                <li>Browse transaction history</li>
+            </ul>
+            <p>You only need internet for sync across devices and signing in/out.</p>
+        </div>
+    </div>
+
+    <h2>🔧 Troubleshooting Common Issues</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">App is crashing or freezing</div>
+        <div class="faq-answer">
+            <ol>
+                <li>Force close the app and reopen it</li>
+                <li>Restart your iPhone or iPad</li>
+                <li>Check for app updates in the App Store</li>
+                <li>Make sure you have the latest iOS version</li>
+                <li>If the issue persists, contact us with details about when the crash occurs</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">CSV import isn't working</div>
+        <div class="faq-answer">
+            <p>Make sure your CSV file:</p>
+            <ul>
+                <li>Is a valid CSV format (not Excel .xlsx)</li>
+                <li>Contains headers (Date, Amount, Description, etc.)</li>
+                <li>Has dates in a recognizable format (MM/DD/YYYY, DD/MM/YYYY, or YYYY-MM-DD)</li>
+                <li>Doesn't have special formatting or merged cells</li>
+            </ul>
+            <p>If you're still having trouble, email us your CSV file (with sensitive data removed) and we'll help diagnose the issue.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can't sign in with Google/Apple</div>
+        <div class="faq-answer">
+            <ul>
+                <li>Check that you have a stable internet connection</li>
+                <li>Make sure you're using the correct Google/Apple account</li>
+                <li>Try signing out of your Google/Apple account in Settings and sign back in</li>
+                <li>Clear Safari cookies: Settings → Safari → Clear History and Website Data</li>
+                <li>Restart your device</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="feature-box">
+        <h3>🎯 Tips for Better Expense Tracking</h3>
+        <ul>
+            <li><strong>Set up regular imports:</strong> Import your bank statements monthly to stay on top of your finances</li>
+            <li><strong>Review categorization:</strong> Check auto-categorized transactions and correct any mistakes to improve accuracy</li>
+            <li><strong>Use the summary view:</strong> Weekly reviews help you spot spending patterns early</li>
+            <li><strong>Add notes:</strong> Add details to transactions for better context when reviewing later</li>
+            <li><strong>Enable sync:</strong> Keep your data safe across devices with cloud sync</li>
+        </ul>
+    </div>
+
+    <h2>📚 Additional Resources</h2>
+    <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a> - How we protect your data</li>
+        <li><a href="https://github.com/clarify-mobile/support" target="_blank">GitHub Repository</a> - View open issues and contribute</li>
+        <li><a href="mailto:support@clarifyexpenses.com">Email Support</a> - Direct support for your questions</li>
+    </ul>
+
+    <h2>💬 Send Us Feedback</h2>
+    <p>
+        We're constantly improving Clarify Expenses and your feedback is invaluable! Whether it's a feature request, 
+        bug report, or just a suggestion, we want to hear from you.
+    </p>
+    <ul>
+        <li><strong>Feature Requests:</strong> <a href="https://github.com/clarify-mobile/support/issues" target="_blank">Submit on GitHub</a></li>
+        <li><strong>General Feedback:</strong> <a href="mailto:support@clarifyexpenses.com">Email us</a></li>
+        <li><strong>Rate the App:</strong> Leave a review on the App Store</li>
+    </ul>
+
+    <div class="response-time">
+        <p>
+            <strong>Need immediate help?</strong><br>
+            Email us at <a href="mailto:support@clarifyexpenses.com">support@clarifyexpenses.com</a><br>
+            We typically respond within 48 hours
+        </p>
+    </div>
+
+    <footer>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="mailto:support@clarifyexpenses.com">Contact Support</a>
+        </p>
+        <p>© 2025 Clarify Expenses. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
